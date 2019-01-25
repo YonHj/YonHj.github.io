@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'lato';
+    
+    
+    
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    color: black;
+    top: 0;
+    border-bottom: 1px;
+    border-bottom-color: darkred;
+    z-index: 1;
+    
+}
+
+li {
+    display: inline;
+    padding: 1em 2em 1em 0;
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+
+
+.home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(media/adult-auto-automobile-401796.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 20em;
+    padding-top: 3em;
+}
+
+.logo {
+    font-family: 'Average', serif;
+    color: white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    text-align: center;
+    margin-top: -0.4em;
+    
+}
+
+.home h1
+{
+    font-size: 7em;
+    white-space: nowrap;
+}
+
+.home h2 {
+    margin-top: -0.5em;
+    font-size: 4em;
+    white-space: nowrap;
+}
+ 
+.about {
+    padding:5em 0 5em 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(237, 71, 71, 1);
+    color: white;
+}
+
+.about h1 {
+    padding-bottom: 1em;
+}
+
+.about p {
+    width: 60%;
+    margin: auto;
+}
+
+.contact {
+    background-color: #F8E9A1;
+    height: 20em;
+    text-align: center;
+    padding: 5em 0  0;
+
+}
+
+.contact h1 {
+    margin-bottom: 1em;
+}
+
+.map {
+    padding-top 5em;
+    height: 30em;
+    text-align: center;
+    background-color: #24305E;
+    color: white;
+}
+
+.map h1 {
+    margin-bottom: 1em;
+    padding: 2em;
+}
