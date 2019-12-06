@@ -1,135 +1,50 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'lato';
-    
-    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kulim Park', sans-serif;
     
 }
 
 body {
-   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(media/adult-auto-automobile-401796.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #3f4d71;
 }
 
-.wrapper {
-    width: 75%;
+#text {
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#clock {
+    display: block;
+    text-align: center;
     margin: auto;
+    color: white; 
+    font-size: 10vw;
+    margin-top: 10%;
 }
 
-.header {
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    color: black;
-    top: 0;
-    z-index: 1;
-    display: inline;
-}
-
-
-.header img {
-    height: 75%;
-    position: absolute;
-    padding: .5em;
-    
-}
-
-li {
-    display: inline;
-    padding: 1em 2em 1em 0;
-    float: right;
+a.start {
+    color: white;
+    border: 5px solid white;
+    width: 10vw;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 100px;
+    display: block;
+    padding: 10px;
     text-decoration: none;
-    color: black;
 }
 
-
-.home {
-   
-    height: 20em;
-    padding-top: 3em;
-}
-
-.logo {
-    font-family: 'Average', serif;
-    color: white;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    text-align: center;
-    margin-top: -0.4em;
+#settings {
+    width: 1.5em;
+    margin: 10px;
     
 }
 
-.home h1
-{
-    font-size: 7em;
-    white-space: nowrap;
-}
-
-.home h2 {
-    margin-top: -0.5em;
-    font-size: 4em;
-    white-space: nowrap;
-}
- 
-.about {
-    padding:5em 0 5em 0;
-    width: 100%;
-    text-align: center;
-    background-color: #FFFFFF; #EF1A23; rgba(237, 71, 71, 1);
-    color: black;
-}
-
-.about h1 {
-    padding-bottom: 1em;
-}
-
-.about p {
-    width: 60%;
-    margin: auto;
-}
-
-.contact {
-    background-color: #FFF200; rgba(237, 197, 103, 1);
-    height: 20em;
-    text-align: center;
-    padding: 5em 0  0;
-
-}
-
-.contact h1 {
-    margin-bottom: 1em;
-}
-
-.contact p {
-    font-size: 1.1em;
-}
-
-.map {
-    padding-top 5em;
-    height: 30em;
-    text-align: center;
-    background-color: #24305E;
-    color: white;
-}
-
-.map h1 {
-    padding: 2em;
-}
-
-@media only screen and (max-width: 1080px) {
+.menu {
+    background-color: white;
     
-    .wrapper {width: 100%;}
-    li {width: 20%; text-align: center;}
-    .header img {
-        position: static;
-        display: block;
-        height: 2.7em;
-        margin: auto;
-    }
-    .logo {margin-top: -.07em;}
 }
