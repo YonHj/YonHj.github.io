@@ -10,6 +10,7 @@ body {
     background-color: #3f4d71;
 }
 
+
 #text {
     color: white;
     text-align: center;
@@ -29,6 +30,7 @@ a.start {
     color: white;
     border: 5px solid white;
     width: 10vw;
+    min-width: 100px;
     margin: auto;
     text-align: center;
     font-size: 2.5vw;
@@ -42,9 +44,31 @@ a.start {
     width: 1.5em;
     margin: 10px;
     
+    
+    
 }
 
 .menu {
     background-color: white;
+    color: #3f4d71;
+    padding: 10px;
+    font-size: 2vw;
+}
+
+.menu input {
+    padding: 5px;
+    border-radius: 50px;
+    border: 2px solid #3f4d71;
+    font-size: 2vw;
+    width: 75px;
+}
+
+@media screen and (max-width:800px){
+    #text {
+        font-size: 8vw;
+    }
     
+    a.start {
+        font-size: 4vw;
+    }
 }

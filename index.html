@@ -13,13 +13,17 @@
 <body>
     <div class="container">
        <div class="settings">
-           <a href="#"><img id="settings" src="settings_ico.svg" alt=""></a>
+           <a href="#"><img id="settings" src="./media/settings_ico.svg" alt=""></a>
            <div id="menu" class="menu">
-               <h1>Hello</h1>
+             <p>Set custom work and break times</p>
+              <p>Work Time</p>
+               <input type="number" id="timertime" value="25">
+               <p>Break Time</p>
+               <input type="number" id="breaktime" value="5">
            </div>
        </div>
-       <h1 id="text">Pomodoro Timer</h1>
-        <p><span id="clock">Time</span></p>
+       <p id="text">Pomodoro Timer</p>
+        <p><span id="clock"></span></p>
         <a class="start" id="start" href="#">Start</a>
         <a class="start" href="#" id="startbreak">Start</a>
     </div>
