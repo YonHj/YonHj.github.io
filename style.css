@@ -71,4 +71,12 @@ a.start {
     a.start {
         font-size: 4vw;
     }
+    
+    .menu {
+        font-size: 5vw;
+    }
+    
+    .menu input {
+        font-size: 5vw;
+    }
 }
