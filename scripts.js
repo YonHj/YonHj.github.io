@@ -1,5 +1,6 @@
 var time;
 var breaktime;
+var idletime = 0;
 
 
 $(document).ready(function() {
@@ -7,8 +8,16 @@ $(document).ready(function() {
     $("#startbreak").hide();
     $("#menu").hide();
     var alarm = $("#alarm");
-    console.log(time)
     
+var idleInterval = setInterval(idleIncrement, 5000);
+$(this).mousemove(function (e) {
+    idletime = 0;
+});
+
+$(this).keypress(function (e) {
+    idletime = 0;
+});
+
     
 //Work timer
 $("#start").click(function(){
@@ -95,6 +104,13 @@ $("#settings").click(function(){
 });
 
 });
+
+function idleIncrement() {
+    idletime += 1;
+    if (idletime > 6) {
+        $("#menu").hide();
+    }
+}
 
             
 
