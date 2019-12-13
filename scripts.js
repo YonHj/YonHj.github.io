@@ -1,11 +1,12 @@
-var time = 0.1;
-var breaktime = 0.1;
+var time;
+var breaktime;
+
 
 $(document).ready(function() {
     console.log("hej");
     $("#startbreak").hide();
     $("#menu").hide();
-
+    var alarm = $("#alarm");
     console.log(time)
     
     
@@ -37,8 +38,10 @@ $("#start").click(function(){
                 clearInterval(counter);
                 $("#startbreak").show();
                 $("body").css("background-color", "#ffac8e");
-                breaktime = .1;
                 $("#text").html("Time for a break");
+                $("#clock").hide();
+                
+                alarm.play();
             }
             //formatting
             if(time%60>=10){
@@ -54,11 +57,11 @@ $("#start").click(function(){
 $("#startbreak").click(function(){
     console.log("break started");
     breaktime = parseFloat($("#breaktime").val());
-    if(time<=0){
+    if(time<0){
         alert("Please enter a number above 0");
     }
     else {
-        
+        $("#clock").show();
         $("#startbreak").hide();
         $("#text").html("Break");
         breaktime *= 60;
