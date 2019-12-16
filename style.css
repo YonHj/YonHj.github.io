@@ -41,10 +41,8 @@ a.start {
 }
 
 #settings {
-    width: 1.5em;
-    margin: 10px;
-    
-    
+    width: 2em;
+    margin: 10px;   
     
 }
 
@@ -61,6 +59,18 @@ a.start {
     border: 2px solid #3f4d71;
     font-size: 2vw;
     width: 75px;
+}
+
+#autostart {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+}
+
+#autostart::checked {
+    width: 1em;
+    height: 1em;
+    color: green;
 }
 
 @media screen and (max-width:1080px){
