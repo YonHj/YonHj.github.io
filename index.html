@@ -11,18 +11,19 @@
     
 </head>
 <body>
-   <audio src="media/mechanical-clock-sound.mp3" type="audio/mpeg" id="alarm"></audio>
+   <audio src="media/alarm.mp3" type="audio/mpeg" id="alarm"></audio>
     <div class="container">
        <div class="settings">
            <a href="#"><img id="settings" src="./media/settings_ico.svg" alt=""></a>
            <div id="menu" class="menu">
-             <p>Set custom work and break times</p>
+             <h1>Set custom times</h1>
               <p>Work Time</p>
-               <input type="number" id="timertime" value="0.1">
+               <input type="number" id="timertime" value="25">
                <p>Break Time</p>
-               <input type="number" id="breaktime" value="0.1">
+               <input type="number" id="breaktime" value="5">
                <p>Start timer automatically</p>
                <input type="checkbox" id="autostart">
+                <label for="autostart"></label>
            </div>
        </div>
        <p id="text">Pomodoro Timer</p>

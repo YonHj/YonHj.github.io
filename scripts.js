@@ -47,7 +47,7 @@ function timerclick(){
         else{
             $("#clock").html(Math.floor(time/60)+":"+"0"+time%60);
         }
-        $("body").css("background-color", "#55ae95");
+        $("body").css("background-color", "#70A288");
         $("#text").html("Work");
         //timer
         interval = setInterval(timer, 1000);
@@ -57,7 +57,7 @@ function timerclick(){
             if(time===0){
                 clearInterval(interval);
                 $("#startbreak").show();
-                $("body").css("background-color", "#ffac8e");
+                $("body").css("background-color", "#2C302E");
                 $("#text").html("Time for a break");
                 $("#clock").hide();
                 $("#reset").hide();
@@ -88,6 +88,7 @@ function breakclick(){
         $("#resetbreak").show();
         $("#startbreak").hide();
         $("#text").html("Break");
+        $("body").css("background-color", "#2274A5");
         breaktime *= 60;
         if(breaktime%60>=10){
                 $("#clock").html(Math.floor(breaktime/60)+":"+breaktime%60);
@@ -102,7 +103,7 @@ function breakclick(){
                 clearInterval(interval)
                 $("#start").show();
                 $("#resetbreak").hide();
-                $("body").css("background-color", "#3f4d71");
+                $("body").css("background-color", "#2C302E");
                 $("#text").html("Time to get back to work");
                 alarm.play();
                 autostart = $("#autostart").is(":checked");
